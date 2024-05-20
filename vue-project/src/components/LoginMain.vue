@@ -14,7 +14,7 @@
   </form>
 </template>
   
-  <!-- <script>
+  <script>
   import { ref } from 'vue';
   import { supabase } from '../supabase.js';
   
@@ -45,9 +45,9 @@
       };
     },
   };
-  </script> -->
+  </script>
 <style scoped>
-.1dh {
+@1dh {
   position: stat;
 }
 
