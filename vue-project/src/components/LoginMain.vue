@@ -47,10 +47,4 @@
   };
   </script>
 <style scoped>
-@1dh {
-  position: stat;
-}
-
-
 </style>
-
