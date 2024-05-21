@@ -1,8 +1,19 @@
 <template>
-  <div class="1dh">
-    <h1>hi</h1>
-    <div class="2dh3dAL">
-      <h2>hi</h2>
+  <div class="mainbigdiv">
+    <div class="divthatholdsthelogo">
+      <img src="/ASH_TEK_logo.png" alt="">
+    </div>
+    <div class="divthatholdstheLOGIN">
+      <div class="smalllogodiv"></div>
+      <div class="usernamediv"></div>
+      <div class="passworddiv"></div>
+      <div class="loginbtndiv"></div>
+      <div class="ordiv"></div>
+      <div class="othertypesofLOGINdiv">
+        <div class="loginwGITHUBdiv"></div>
+        <div class="loginwGOOGLEdiv"></div>
+      </div>
+      <div class="forgorpassdiv"></div>
     </div>
   </div>
   <form @submit.prevent="login">
