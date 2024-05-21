@@ -23,6 +23,22 @@
       const email = ref('');
       const password = ref('');
   
+
+      const signUp = async () => {
+        try {
+          const { user, error } = await supabase.auth.signUp({
+            email: email.value,
+            password: password.value,
+          });
+          if (error) {
+            throw error;
+          }
+          console.log('User logged in:', user);
+        } catch (error) {
+          console.error('Login error:', error.message);
+        }
+      };
+
       const login = async () => {
         try {
           const { user, error } = await supabase.auth.signInWithPassword({
