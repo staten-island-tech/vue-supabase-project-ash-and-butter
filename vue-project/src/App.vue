@@ -4,6 +4,7 @@ import Account from './components/Account.vue'
 import Auth from './components/Auth.vue'
 import { supabase } from './supabase'
 import LoginMain from './components/LoginMain.vue'
+import SignUp from './components/SignUp.vue'
 
 const session = ref()
 
@@ -21,7 +22,8 @@ onMounted(() => {
 <template>
   <div class="container" style="padding: 50px 0 100px 0">
     <Account v-if="session" :session="session" />
-    <Auth v-else />
-    <LoginMain />
+    
+    <LoginMain v-else/>
+    <SignUp />
   </div>
 </template>
