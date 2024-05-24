@@ -21,13 +21,13 @@
       <div class="forgorpassdiv"></div>
     </div>
   </div>
-  <!-- <form @submit.prevent="login">
+  <form @submit.prevent="login">
     <label for="email">Email:</label>
     <input type="email" v-model="email" required>
     <label for="password">Password:</label>
     <input type="password" v-model="password" required>
     <button type="submit">Login</button>
-  </form> -->
+  </form>
 </template>
   
   <script>
