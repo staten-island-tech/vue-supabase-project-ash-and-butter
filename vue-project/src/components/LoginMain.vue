@@ -1,17 +1,29 @@
 <template>
-  <div class="1dh">
-    <h1>hi</h1>
-    <div class="2dh3dAL">
-      <h2>hi</h2>
+  <div class="mainbigdiv" style="align-self: center; border-radius: .5rem; border-color: brown; background-color: red; padding: 1rem; display: flex;">
+    <div class="divthatholdsthelogo" style="align-items: center;  border-color: blue; background: purple; padding: 2rem; margin: 1rem; border-radius: .5rem;">
+      <img src="/ASH_TEK_logo.png"  style="" alt="">
+    </div>
+    <div class="divthatholdstheLOGIN" style="align-items: center; border-radius: .5rem; border-color: green; background: purple; width: 40rem; margin: 1rem; ">
+      <div class="smalllogodiv">
+      </div>
+      <div class="usernamediv"></div>
+      <div class="passworddiv"></div>
+      <div class="loginbtndiv"></div>
+      <div class="ordiv"></div>
+      <div class="othertypesofLOGINdiv">
+        <div class="loginwGITHUBdiv"></div>
+        <div class="loginwGOOGLEdiv"></div>
+      </div>
+      <div class="forgorpassdiv"></div>
     </div>
   </div>
-  <form @submit.prevent="login">
+  <!-- <form @submit.prevent="login">
     <label for="email">Email:</label>
     <input type="email" v-model="email" required>
     <label for="password">Password:</label>
     <input type="password" v-model="password" required>
     <button type="submit">Login</button>
-  </form>
+  </form> -->
 </template>
   
   <script>
