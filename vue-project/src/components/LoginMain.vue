@@ -4,9 +4,13 @@
       <img src="/ASH_TEK_logo.png"  style="" alt="">
     </div>
     <div class="divthatholdstheLOGIN" style="align-items: center; border-radius: .5rem; border-color: green; background: purple; width: 40rem; margin: 1rem; ">
-      <div class="smalllogodiv">
+      <div class="smalllogodiv" style="margin: 2rem; background-color: red; border-radius: .5rem; display: flex">
+        <img class="smalllogo" src="/ASH_TEK_logo.png" style="max-width: 10%; max-height: 10%; " alt="">
+        <h1 class="sitenamenexttologo" style="margin-left: auto; margin-right: auto; color: black;">Obama obama obama obama</h1>
       </div>
-      <div class="usernamediv"></div>
+      <div class="usernamediv" style="margin-left: 2rem; margin-right: 2rem; margin-bottom: 2rem; background-color: red; border-radius: .5rem;">
+        <input type="text" class="usernameinput" style="margin: .5rem;">
+      </div>
       <div class="passworddiv"></div>
       <div class="loginbtndiv"></div>
       <div class="ordiv"></div>
