@@ -9,9 +9,11 @@
         <h1 class="sitenamenexttologo" style="margin-left: auto; margin-right: auto; color: black;">Obama obama obama obama</h1>
       </div>
       <div class="usernamediv" style="margin-left: 2rem; margin-right: 2rem; margin-bottom: 2rem; background-color: red; border-radius: .5rem;">
-        <input type="text" class="usernameinput" style="margin: .5rem;">
+        <input type="text" class="usernameinput" placeholder="Username" style="margin: .5rem; border-color: #CCCCCC; border-radius: .1rem; padding: 5px; font-size: 16px; border-width: 1px; background-color: #FFFFFF; color: #000000; border-style: solid; border-radius: 1px; box-shadow: 0px 0px 5px rgba(66,66,66,.75); text-shadow: -50px 0px 0px rgba(66,66,66,.0);">
       </div>
-      <div class="passworddiv"></div>
+      <div class="passworddiv">
+        <input type="text" class="passwordinput" placeholder="Password" style="margin: .5rem; border-color: #CCCCCC; border-radius: .1rem; padding: 5px; font-size: 16px; border-width: 1px; background-color: #FFFFFF; color: #000000; border-style: solid; border-radius: 1px; box-shadow: 0px 0px 5px rgba(66,66,66,.75); text-shadow: -50px 0px 0px rgba(66,66,66,.0);">
+      </div>
       <div class="loginbtndiv"></div>
       <div class="ordiv"></div>
       <div class="othertypesofLOGINdiv">
