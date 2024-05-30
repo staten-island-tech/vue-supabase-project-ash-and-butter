@@ -1,25 +1,56 @@
+<template>
+  <div>
+Postmaker
+<form @submit.prevent="insertPost">
+  <label image_url="image_url">Image URL:</label>
+  <input type="text" v-model="image_url" required>
+  <label caption="caption">Caption:</label>
+  <input type="text" v-model="caption" required>
+  <button @click="addPost">Add Post</button>
+
+</form>
+  </div>
+</template>
 
 <script>
-async function insertPost(post) {
-    const { data, error } = await supabase
-      .from('posts')
-      .insert([post]);
-  
-    if (error) {
-      console.error('Error inserting data:', error);
-    } else {
-      console.log('Data inserted successfully:', data);
-    }
+import { ref } from 'vue';
+import supabase from '../supabase'; // Adjust the path as necessary
+
+export default {
+  name: 'PostMaker',
+  setup() {
+    const post = ref({
+      user_id: '12345',
+      username: 'john_doe',
+      image_url: 'https://example.com/image.jpg',
+      caption: 'Enjoying the sunny day!',
+      likes: 150,
+      
+    });
+
+    const insertPost = async (post) => {
+      const { data, error } = await supabase
+        .from('posts')
+        .insert([post]);
+
+      if (error) {
+        console.error('Error inserting data:', error);
+      } else {
+        console.log('Data inserted successfully:', data);
+      }
+    };
+
+    const addPost = () => {
+      insertPost(post.value);
+    };
+
+    return {
+      addPost
+    };
   }
-  
-  const post = {
-    user_id: '12345',
-    username: 'john_doe',
-    image_url: 'https://example.com/image.jpg',
-    caption: 'Enjoying the sunny day!',
-    likes: 150,
-    created_at: new Date().toISOString()
-  };
-  
-  insertPost(post);
+};
 </script>
+
+<style lang="scss" scoped>
+
+</style>

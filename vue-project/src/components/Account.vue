@@ -9,6 +9,7 @@ const loading = ref(true)
 const username = ref('')
 const website = ref('')
 const avatar_url = ref('')
+import Postmaker from './PostMaker.vue'
 
 onMounted(() => {
   getProfile()
@@ -76,6 +77,7 @@ async function signOut() {
 </script>
 
 <template>
+  <Postmaker />
   <form class="form-widget" @submit.prevent="updateProfile">
     <div>
       <label for="email">Email</label>
@@ -109,6 +111,7 @@ async function signOut() {
 
     <!-- Other form elements -->
   </form>
+  
 </template>
 
 <script>

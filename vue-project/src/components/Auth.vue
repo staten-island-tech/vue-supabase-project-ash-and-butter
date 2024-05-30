@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { supabase } from '../supabase'
 
+
 const loading = ref(false)
 const email = ref('')
 
@@ -39,6 +40,7 @@ const handleLogin = async () => {
           :disabled="loading"
         />
       </div>
+     
     </div>
   </form>
 </template>
