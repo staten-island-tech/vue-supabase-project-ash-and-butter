@@ -4,14 +4,14 @@
       <img src="/ASH_TEK_logo.png"  style="" alt="">
     </div>
     <div class="divthatholdstheLOGIN" style="align-items: center; border-radius: .5rem; border-color: green; background: purple; width: 40rem; margin: 1rem; ">
-      <div class="smalllogodiv" style="margin: 2rem; background-color: red; border-radius: .5rem; display: flex">
-        <img class="smalllogo" src="/ASH_TEK_logo.png" style="max-width: 10%; max-height: 10%; " alt="">
-        <h1 class="sitenamenexttologo" style="margin-left: auto; margin-right: auto; color: black;">Obama obama obama obama</h1>
+      <div class="smalllogodiv" style="margin: 2rem; background-color: red; border-radius: .5rem; display: flex; max-height: fit-content;">
+        <!-- <img class="smalllogo" src="/ASH_TEK_logo.png" style="max-width: 10%; max-height: 10%; padding: 2rem;" alt=""> -->
+        <h1 class="sitenamenexttologo" style="margin-left: auto; margin-right: auto; color: black; font-family: sans-serif; font-size: 2rem; align-items: start;">WHAT'S HAPPENING NOW</h1>
       </div>
       <div class="usernamediv" style="margin-left: 2rem; margin-right: 2rem; margin-bottom: 2rem; background-color: red; border-radius: .5rem;">
         <input type="text" class="usernameinput" placeholder="Username" style="margin: .5rem; border-color: #CCCCCC; border-radius: .1rem; padding: 5px; font-size: 16px; border-width: 1px; background-color: #FFFFFF; color: #000000; border-style: solid; border-radius: 1px; box-shadow: 0px 0px 5px rgba(66,66,66,.75); text-shadow: -50px 0px 0px rgba(66,66,66,.0);">
       </div>
-      <div class="passworddiv">
+      <div class="passworddiv" style="margin-left: 2rem; margin-right: 2rem; margin-bottom: 2rem; background-color: red; border-radius: .5rem;">
         <input type="text" class="passwordinput" placeholder="Password" style="margin: .5rem; border-color: #CCCCCC; border-radius: .1rem; padding: 5px; font-size: 16px; border-width: 1px; background-color: #FFFFFF; color: #000000; border-style: solid; border-radius: 1px; box-shadow: 0px 0px 5px rgba(66,66,66,.75); text-shadow: -50px 0px 0px rgba(66,66,66,.0);">
       </div>
       <div class="loginbtndiv"></div>
