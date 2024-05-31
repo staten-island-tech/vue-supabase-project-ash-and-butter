@@ -1,6 +1,8 @@
 <template>
   <div>
 Postmaker
+
+
 <form @submit.prevent="insertPost">
   <label image_url="image_url">Image URL:</label>
   <input type="text" v-model="image_url" required>
@@ -20,7 +22,7 @@ export default {
   name: 'PostMaker',
   setup() {
     const post = ref({
-      user_id: '12345',
+      
       username: 'john_doe',
       image_url: 'https://example.com/image.jpg',
       caption: 'Enjoying the sunny day!',
