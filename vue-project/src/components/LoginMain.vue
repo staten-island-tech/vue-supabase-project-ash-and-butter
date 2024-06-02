@@ -120,8 +120,12 @@
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
-    margin-top: 12px;
+    margin-top: 100px;
     max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+
   } /* sign up and (logo and (login and forgot password)) */
   .loginPageHolderM1 {
     align-items: center;
