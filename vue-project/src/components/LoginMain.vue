@@ -10,7 +10,7 @@
             <div class="loginPageHolderM12111">
               <label class="loginPageHolderM121111">
                 <span class="loginPageHolderM1211111">Phone number, username, or email</span>
-                <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off" autocorrect="off" maxlength="75" class="loginPageHolderM1211112">
+                <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off" autocorrect="off" maxlength="75" class="loginPageHolderM1211112" type="email" v-model="email" required>
               </label>
             </div>
           </div>
@@ -18,12 +18,12 @@
             <div class="loginPageHolderM12121">
               <label class="loginPageHolderM121211">
                 <span class="loginPageHolderM1212111">Password</span>
-                <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off" autocorrect="off" type="password" class="loginPageHolderM1212112" value name="password">
+                <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off" autocorrect="off" type="password" class="loginPageHolderM1212112" value name="password" v-model="password" required>
               </label>
             </div>
           </div>
           <div class="loginPageHolderM1213"> <!--LoginBtn-->
-            <button class="loginPageHolderM12131" disabled type="submit">
+            <button class="loginPageHolderM12131" type="submit">
               <div class="loginPageHolderM12132">Log In</div>
             </button>
           </div>
@@ -62,7 +62,6 @@
   
   <div class="loginGreaterDiv">
     <div class="loginSmallerDiv">
-      <img class="loginLogoImg" src="/CubeCraft.png" alt="">
       <form @submit.prevent="login" class="loginForm">
         <div class="loginFormD1">
           
