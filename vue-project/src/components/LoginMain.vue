@@ -59,6 +59,7 @@
             Don't have an account?
             <a class="loginPageHolderM2111" href="" role="link">
               <span class="loginPageHolderM21111" dir="auto">Sign Up</span>
+              <RouterLink to="/signup" class="loginPageHolderM21112" role="link">Sign Up</RouterLink>
             </a>
           </p>
         </div>
@@ -99,6 +100,7 @@
 <script>
   import { ref } from 'vue';
   import { supabase } from '../supabase.js';
+import { RouterLink } from 'vue-router';
   
   export default {
     setup() {
