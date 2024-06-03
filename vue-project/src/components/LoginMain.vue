@@ -76,7 +76,7 @@
 
 
 
-  <!-- <div class="loginGreaterDiv">
+  <div class="loginGreaterDiv">
     <div class="loginSmallerDiv">
       <form @submit.prevent="login" class="loginForm">
         <div class="loginFormD1">
@@ -93,7 +93,7 @@
         <button type="submit">Login</button>
       </form>
     </div>
-  </div> -->
+  </div>
 
 </template>
   
