@@ -1,70 +1,85 @@
 <template>
-  <div class="loginPageHolderM">
-    <div class="loginPageHolderM1">
-      <div class="loginPageHolderM11" aria-disabled="false" role="button" tabindex="0" >
-        <img class="loginPageHolderM111" src="/CubeCraft.png" alt="CubeCraft Logo">
-      </div>
-      <div class="loginPageHolderM12">
-        <div class="loginPageHolderM121"> <!--LogIn-->
-          <div class="loginPageHolderM1211"> <!--Phone number, username, or email-->
-            <div class="loginPageHolderM12111">
-              <label class="loginPageHolderM121111">
-                <span class="loginPageHolderM1211111">Phone number, username, or email</span>
-                <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off" autocorrect="off" maxlength="75" class="loginPageHolderM1211112" type="email" v-model="email" required>
-              </label>
-            </div>
-          </div>
-          <div class="loginPageHolderM1212"> <!--Password-->
-            <div class="loginPageHolderM12121">
-              <label class="loginPageHolderM121211">
-                <span class="loginPageHolderM1212111">Password</span>
-                <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off" autocorrect="off" type="password" class="loginPageHolderM1212112" value name="password" v-model="password" required>
-              </label>
-            </div>
-          </div>
-          <div class="loginPageHolderM1213"> <!--LoginBtn-->
-            <button class="loginPageHolderM12131" type="submit">
-              <div class="loginPageHolderM12132">Log In</div>
-            </button>
-          </div>
-          <div class="loginPageHolderM1214"> <!--OR-->
-            <div class="loginPageHolderM12141">
-              <div class="loginPageHolderM121411"></div>
-              <div class="loginPageHolderM121412">OR</div>
-              <div class="loginPageHolderM121413"></div>
-            </div>
-          </div>
-          <div class="loginPageHolderM1215"></div>
-        </div>
-        <div class="loginPageHolderM122" role="link" tabindex="0"> <!--Forgot Password-->
-          <div class="loginPageHolderM1221">Forgot password?</div>
-        </div>
-      </div>
-    </div>
-    <div class="loginPageHolderM2">
-      <div class="loginPageHolderM21">
-        <p class="loginPageHolderM211">
-          Don't have an account?
-          <a class="loginPageHolderM2111" href="" role="link">
-            <span class="loginPageHolderM21111" dir="auto">Sign Up</span>
-          </a>
-        </p>
-      </div>
-    </div>
+  <div style="max-width: 100vw; margin-right: auto; align-self: center;">
 
+  <div class="maxini" style="max-width: fit-content; margin-left: auto; margin-right: auto;">
+
+  <div class="loginPageHolderMM">
+    <div style="background-color: transparent; margin-top: auto;">
+      <img style="width: 432px; margin-bottom: 5px;" src="/CubeLogo.png" alt="">
+    </div>
+    <div class="loginPageHolderM">
+      <div class="loginPageHolderM1">
+        <div class="loginPageHolderM11" aria-disabled="false" role="button" tabindex="0">
+          <img class="loginPageHolderM111" src="/CubeCraft.png" alt="CubeCraft Logo">
+        </div>
+        <div class="loginPageHolderM12">
+          <div class="loginPageHolderM121"> <!--LogIn-->
+            <div class="loginPageHolderM1211"> <!--Phone number, username, or email-->
+              <div class="loginPageHolderM12111">
+                <label class="loginPageHolderM121111">
+                  <span class="loginPageHolderM1211111">Phone number, username, or email</span>
+                  <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off"
+                    autocorrect="off" maxlength="75" class="loginPageHolderM1211112" type="email" v-model="email"
+                    required>
+                </label>
+              </div>
+            </div>
+            <div class="loginPageHolderM1212"> <!--Password-->
+              <div class="loginPageHolderM12121">
+                <label class="loginPageHolderM121211">
+                  <span class="loginPageHolderM1212111">Password</span>
+                  <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off"
+                    autocorrect="off" type="password" class="loginPageHolderM1212112" value name="password"
+                    v-model="password" required>
+                </label>
+              </div>
+            </div>
+            <div class="loginPageHolderM1213"> <!--LoginBtn-->
+              <button class="loginPageHolderM12131" type="submit">
+                <div class="loginPageHolderM12132">Log In</div>
+              </button>
+            </div>
+            <div class="loginPageHolderM1214"> <!--OR-->
+              <div class="loginPageHolderM12141">
+                <div class="loginPageHolderM121411"></div>
+                <div class="loginPageHolderM121412">OR</div>
+                <div class="loginPageHolderM121413"></div>
+              </div>
+            </div>
+            <div class="loginPageHolderM1215"></div>
+          </div>
+          <div class="loginPageHolderM122" role="link" tabindex="0"> <!--Forgot Password-->
+            <div class="loginPageHolderM1221">Forgot password?</div>
+          </div>
+        </div>
+      </div>
+      <div class="loginPageHolderM2">
+        <div class="loginPageHolderM21">
+          <p class="loginPageHolderM211">
+            Don't have an account?
+            <a class="loginPageHolderM2111" href="" role="link">
+              <span class="loginPageHolderM21111" dir="auto">Sign Up</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-  
-  
-  
-  
-  
-  
-  
-  <div class="loginGreaterDiv">
+</div>
+</div>
+
+
+
+
+
+
+
+
+  <!-- <div class="loginGreaterDiv">
     <div class="loginSmallerDiv">
       <form @submit.prevent="login" class="loginForm">
         <div class="loginFormD1">
-          
+
         </div>
         <div class="loginEmail">
           <div class="loginEmailD1">
@@ -72,13 +87,13 @@
           </div>
           <input class="loginEmailField" type="email" v-model="email" required>
         </div>
-        
+
         <input type="password" v-model="password" required>
         <button type="submit">Login</button>
       </form>
     </div>
-  </div>
-  
+  </div> -->
+
 </template>
   
 <script>
@@ -114,6 +129,10 @@
   };
 </script>
 <style >
+  .loginPageHolderMM {
+    display: flex;
+    flex-direction: row;
+  }
   .loginPageHolderM {
     color: black;
     display: flex;
@@ -798,14 +817,14 @@
     appearance: none;
     background-attachment: scroll;
     background-clip: border-box;
-    background-color: rgb(0, 149, 246);
+    background-color: rgb(231, 234, 43);
     background-image: none;
     background-origin: padding-box;
     background-position-x: 0%;
     background-position-y: 0%;
     background-repeat: repeat;
     background-size: auto;
-    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(0, 0, 0);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     border-bottom-style: none;
@@ -815,19 +834,19 @@
     border-image-slice: 100%;
     border-image-source: none;
     border-image-width: 1;
-    border-left-color: rgb(255, 255, 255);
+    border-left-color: rgb(0, 0, 0);
     border-left-style: none;
-    border-left-width: 0px;
-    border-right-color: rgb(255, 255, 255);
+    border-left-width: 2px;
+    border-right-color: rgb(0, 0, 0);
     border-right-style: none;
-    border-right-width: 0px;
-    border-top-color: rgb(255, 255, 255);
+    border-right-width: 2px;
+    border-top-color: rgb(0, 0, 0);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-top-style: none;
     border-top-width: 0px;
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     color-scheme: light;
     cursor: pointer;
     direction: ltr;
@@ -881,7 +900,7 @@
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     color-scheme: light;
     cursor: pointer;
     direction: ltr;
@@ -1122,19 +1141,19 @@
     max-width: 100%;
     margin-top: 0!important;
     font-weight: 400;
-    color: black;
+    color: rgb(0, 149, 246);
     margin-right: 0!important;
     word-wrap: break-word;
     position: relative;
     display: block;
     white-space: pre-line;
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 0!important;
   } /* forgot password d1 */
   
   .loginPageHolderM2 {
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(231, 234, 43);
     border-bottom-color: rgb(219, 219, 219);
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
