@@ -1,10 +1,42 @@
 <template>
-  <div class="1dh">
-    <h1>hi</h1>
-    <div class="2dh3dAL">
-      <h2>hi</h2>
+  <div style="max-width: 100vw; margin-right: auto; align-self: center;">
+    <div class="maxini" style="max-width: fit-content; margin-left: auto; margin-right: auto;">
+      <div class="signupPageHolderMM">
+        <div class="signupPageHolderM">
+          <div class="signupPageHolderM1">
+            <div class="signupPageHolderM11" aria-disabled="false" role="button" tabindex="0">
+              <img class="signupPageHolderM111" src="/CubeCraft.png" alt="CubeCraft Logo">
+            </div>
+            <div class="signupPageHolderM12">
+
+            </div>>
+          </div>
+          <div class="signupPageHolderM2">
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <form @submit.prevent="login">
     <label for="email">Email:</label>
     <input type="email" v-model="email" required>
@@ -14,7 +46,7 @@
   </form>
 </template>
   
-  <script>
+<script>
   import { ref } from 'vue';
   import { supabase } from '../supabase.js';
   
@@ -45,6 +77,6 @@
       };
     },
   };
-  </script>
+</script>
 <style scoped>
 </style>

@@ -21,6 +21,6 @@ onMounted(() => {
 <template>
   <div class="container">
     <Account v-if="session" :session="session" />
-  <LoginMain v-else />   
+    <LoginMain v-else />   
   </div>
 </template>

@@ -1,72 +1,70 @@
 <template>
   <div style="max-width: 100vw; margin-right: auto; align-self: center;">
-
-  <div class="maxini" style="max-width: fit-content; margin-left: auto; margin-right: auto;">
-
-  <div class="loginPageHolderMM">
-    <div style="background-color: transparent; margin-top: auto;">
-      <img style="width: 432px; margin-bottom: 5px;" src="/CubeLogo.png" alt="">
-    </div>
-    <div class="loginPageHolderM">
-      <div class="loginPageHolderM1">
-        <div class="loginPageHolderM11" aria-disabled="false" role="button" tabindex="0">
-          <img class="loginPageHolderM111" src="/CubeCraft.png" alt="CubeCraft Logo">
+    <div class="maxini" style="max-width: fit-content; margin-left: auto; margin-right: auto;">
+      <div class="loginPageHolderMM">
+        <div style="background-color: transparent; margin-top: auto;">
+          <img style="width: 432px; margin-bottom: 5px;" src="/CubeLogo.png" alt="">
         </div>
-        <div class="loginPageHolderM12">
-          <div class="loginPageHolderM121"> <!--LogIn-->
-            <div class="loginPageHolderM1211"> <!--Phone number, username, or email-->
-              <div class="loginPageHolderM12111">
-                <label class="loginPageHolderM121111">
-                  <span class="loginPageHolderM1211111">Phone number, username, or email</span>
-                  <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off"
-                    autocorrect="off" maxlength="75" class="loginPageHolderM1211112" type="email" v-model="email"
-                    required>
-                </label>
+        <div class="loginPageHolderM">
+          <div class="loginPageHolderM1">
+            <div class="loginPageHolderM11" aria-disabled="false" role="button" tabindex="0">
+              <img class="loginPageHolderM111" src="/CubeCraft.png" alt="CubeCraft Logo">
+            </div>
+            <div class="loginPageHolderM12">
+              <div class="loginPageHolderM121"> <!--LogIn-->
+                <div class="loginPageHolderM1211"> <!--Phone number, username, or email-->
+                  <div class="loginPageHolderM12111">
+                    <label class="loginPageHolderM121111">
+                      <span class="loginPageHolderM1211111">Phone number, username, or email</span>
+                      <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off"
+                        autocorrect="off" maxlength="75" class="loginPageHolderM1211112" type="email" v-model="email"
+                        required>
+                    </label>
+                  </div>
+                </div>
+                <div class="loginPageHolderM1212"> <!--Password-->
+                  <div class="loginPageHolderM12121">
+                    <label class="loginPageHolderM121211">
+                      <span class="loginPageHolderM1212111">Password</span>
+                      <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off"
+                        autocorrect="off" type="password" class="loginPageHolderM1212112" value name="password"
+                        v-model="password" required>
+                    </label>
+                  </div>
+                </div>
+                <div class="loginPageHolderM1213"> <!--LoginBtn-->
+                  <button class="loginPageHolderM12131" type="submit">
+                    <div class="loginPageHolderM12132">Log In</div>
+                  </button>
+                </div>
+                <div class="loginPageHolderM1214"> <!--OR-->
+                  <div class="loginPageHolderM12141">
+                    <div class="loginPageHolderM121411"></div>
+                    <div class="loginPageHolderM121412">OR</div>
+                    <div class="loginPageHolderM121413"></div>
+                  </div>
+                </div>
+                <div class="loginPageHolderM1215"></div>
+              </div>
+              <div class="loginPageHolderM122" role="link" tabindex="0"> <!--Forgot Password-->
+                <div class="loginPageHolderM1221">Forgot password?</div>
               </div>
             </div>
-            <div class="loginPageHolderM1212"> <!--Password-->
-              <div class="loginPageHolderM12121">
-                <label class="loginPageHolderM121211">
-                  <span class="loginPageHolderM1212111">Password</span>
-                  <input aria-label="Phone number, username, or email" aria-required="true" autocapitalize="off"
-                    autocorrect="off" type="password" class="loginPageHolderM1212112" value name="password"
-                    v-model="password" required>
-                </label>
-              </div>
-            </div>
-            <div class="loginPageHolderM1213"> <!--LoginBtn-->
-              <button class="loginPageHolderM12131" type="submit">
-                <div class="loginPageHolderM12132">Log In</div>
-              </button>
-            </div>
-            <div class="loginPageHolderM1214"> <!--OR-->
-              <div class="loginPageHolderM12141">
-                <div class="loginPageHolderM121411"></div>
-                <div class="loginPageHolderM121412">OR</div>
-                <div class="loginPageHolderM121413"></div>
-              </div>
-            </div>
-            <div class="loginPageHolderM1215"></div>
           </div>
-          <div class="loginPageHolderM122" role="link" tabindex="0"> <!--Forgot Password-->
-            <div class="loginPageHolderM1221">Forgot password?</div>
+          <div class="loginPageHolderM2">
+            <div class="loginPageHolderM21">
+              <p class="loginPageHolderM211">
+                Don't have an account?
+                <a class="loginPageHolderM2111" href="" role="link">
+                  <span class="loginPageHolderM21111" dir="auto">Sign Up</span>
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="loginPageHolderM2">
-        <div class="loginPageHolderM21">
-          <p class="loginPageHolderM211">
-            Don't have an account?
-            <a class="loginPageHolderM2111" href="" role="link">
-              <span class="loginPageHolderM21111" dir="auto">Sign Up</span>
-            </a>
-          </p>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 
 
 
@@ -766,7 +764,6 @@
     width: 250px;
     word-spacing: 0px;
   } /* Password Label input */
-
   .loginPageHolderM1213{
     align-content: stretch;
     align-items: stretch;
