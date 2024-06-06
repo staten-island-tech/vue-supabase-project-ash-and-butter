@@ -76,33 +76,51 @@ async function signOut() {
 </script>
 
 <template>
-  <form class="form-widget" @submit.prevent="updateProfile">
-    <div>
-      <label for="email">Email</label>
-      <input id="email" type="text" :value="session.user.email" disabled />
-    </div>
-    <div>
-      <label for="username">Name</label>
-      <input id="username" type="text" v-model="username" />
-    </div>
-    <div>
-      <label for="website">Website</label>
-      <input id="website" type="url" v-model="website" />
-    </div>
+  <div style="background-color: red; width: 100vw; display: flex;height: 50rem;">
+    <div style="background-color: blue; width: 30vw;height: 50rem;"></div>
+    <div style="background-color: aqua; width: 70vw;height: 50rem; ">
+      <div style="background-color: red; width: 55vw; height: 50rem; margin-right: auto; margin-left: auto;">
 
-    <div>
-      <input
-        type="submit"
-        class="button primary block"
-        :value="loading ? 'Loading ...' : 'Update'"
-        :disabled="loading"
-      />
-    </div>
+        <div style="background-color: blanchedalmond;width:55vw; height: 20rem; display: flex;">
+          <div style="width: 20rem; background-color: purple;">
+            <img src="/CubeLogo.png" alt="" style="height: 15rem; width: 15rem; margin-top: 2rem; margin-left: 2rem; border-radius: .5rem;">
+          </div>
+          <div style="margin-top: 2rem;">
+            <h1>Welcome</h1>
+            <form class="form-widget" @submit.prevent="updateProfile" style="font-size: large;">
+              <div>
+                <label for="email" style="margin-left: 2rem; margin-right: 2.9rem;">Email:</label>
+                <input id="email" style="background-color: white; color: black;" type="text" :value="session.user.email" disabled />
+              </div>
+              <div>
+                <label for="username" style="margin-left: 2rem; margin-right: 2.9rem;">Name:</label>
+                <input id="username" style="background-color: white; color: black;" type="text" v-model="username" />
+              </div>
+              <div>
+                <label for="website" style="margin-left: 2rem; margin-right: 2rem;">Website:</label>
+                <input id="website" type="url" v-model="website" />
+              </div>
+              <div style="display: flex;">
+                <div>
+                  <input type="submit" style="background-color: white; color: black; font-size: large; border-radius: .5rem;border-style: solid; border-color: black; margin-top: 1rem; margin-bottom: 1rem; margin-left: 2rem;" class="button primary block" :value="loading ? 'Loading ...' : 'Update'"
+                  :disabled="loading" />
+                </div>
 
-    <div>
-      <button class="button block" @click="signOut" :disabled="loading">Sign Out</button>
+                <div>
+                  <button style="background-color: white; color: black; font-size: large; border-radius: .5rem;border-style: solid; border-color: black; margin-top: 1rem; margin-bottom: 1rem; margin-left: 1rem;" class="button block" @click="signOut" :disabled="loading">Sign Out</button>
+                </div>
+              </div>
+              
+            </form>
+          </div>
+
+        </div>
+      </div>
     </div>
-  </form>
+  </div>
+
+
+
   <form class="form-widget" @submit.prevent="updateProfile">
     <!-- Add to body -->
     <Avatar v-model:path="avatar_url" @upload="updateProfile" size="10" />
@@ -115,4 +133,5 @@ async function signOut() {
 // Import the new component
 import Avatar from './Avatar.vue'
 </script>
-
+<style>
+</style>

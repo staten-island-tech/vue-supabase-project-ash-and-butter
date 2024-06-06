@@ -30,7 +30,7 @@ onMounted(() => {
 
     
   </head>
-  <div class="container" style="padding: 50px 0 100px 0">
+  <div class="container" >
     <Account v-if="session" :session="session" />
     
     <LoginMain v-else/>
