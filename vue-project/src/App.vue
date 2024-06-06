@@ -1,9 +1,16 @@
 <script setup>
+
+
+
+
+
 import { onMounted, ref } from 'vue'
 import Account from './components/Account.vue'
 import Auth from './components/Auth.vue'
 import { supabase } from './supabase'
 import LoginMain from './components/LoginMain.vue'
+import PostMaker from './components/PostMaker.vue'
+
 
 const session = ref()
 
@@ -19,8 +26,15 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="container">
+  <head>
+
+    
+  </head>
+  <div class="container" style="padding: 50px 0 100px 0">
     <Account v-if="session" :session="session" />
-    <LoginMain v-else />   
+    
+    <LoginMain v-else/>
+    <PostMaker/>
+    
   </div>
 </template>

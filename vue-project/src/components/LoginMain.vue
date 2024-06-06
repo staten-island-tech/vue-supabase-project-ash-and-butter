@@ -2,15 +2,15 @@
   <div style="max-width: 100vw; margin-right: auto; align-self: center;">
     <div class="maxini" style="max-width: fit-content; margin-left: auto; margin-right: auto;">
       <div class="loginPageHolderMM">
-        <div style="background-color: transparent; margin-top: auto;">
-          <img style="width: 432px; margin-bottom: 5px;" src="/CubeLogo.png" alt="">
+        <div style="background-color: transparent; margin-top: auto;"> <!--Cube Thingie-->
+          <img style="width: 432px; margin-bottom: 5px;" src="/CubeLogo.png" alt=""> <!--Cube Thingie-->
         </div>
-        <div class="loginPageHolderM">
-          <div class="loginPageHolderM1">
-            <div class="loginPageHolderM11" aria-disabled="false" role="button" tabindex="0">
+        <div class="loginPageHolderM"> <!--Momento Logo, LogIn, Forgot Password, SignUp-->
+          <div class="loginPageHolderM1"> <!--Momento Logo, LogIn, Forgot Password-->
+            <div class="loginPageHolderM11" aria-disabled="false" role="button" tabindex="0"> <!--Momento Logo-->
               <img class="loginPageHolderM111" src="/CubeCraft.png" alt="CubeCraft Logo">
             </div>
-            <div class="loginPageHolderM12">
+            <div class="loginPageHolderM12"> <!--LogIn + Forgot Password-->
               <div class="loginPageHolderM121"> <!--LogIn-->
                 <div class="loginPageHolderM1211"> <!--Phone number, username, or email-->
                   <div class="loginPageHolderM12111">
@@ -51,12 +51,12 @@
               </div>
             </div>
           </div>
-          <div class="loginPageHolderM2">
-            <div class="loginPageHolderM21">
-              <p class="loginPageHolderM211">
+          <div class="loginPageHolderM2"> <!--SignUp-->
+            <div class="loginPageHolderM21"> <!--SignUp-->
+              <p class="loginPageHolderM211"> <!--SignUp-->
                 Don't have an account?
                 <a class="loginPageHolderM2111" href="" role="link">
-                  <span class="loginPageHolderM21111" dir="auto">Sign Up</span>
+                  <RouterLink to="/signup" class="loginPageHolderM21111" role="link" dir="auto">Sign Up</RouterLink>
                 </a>
               </p>
             </div>
@@ -73,7 +73,7 @@
 
 
 
-  <!-- <div class="loginGreaterDiv">
+  <div class="loginGreaterDiv">
     <div class="loginSmallerDiv">
       <form @submit.prevent="login" class="loginForm">
         <div class="loginFormD1">
@@ -90,19 +90,20 @@
         <button type="submit">Login</button>
       </form>
     </div>
-  </div> -->
+  </div> 
 
 </template>
   
 <script>
   import { ref } from 'vue';
   import { supabase } from '../supabase.js';
+import { RouterLink } from 'vue-router';
   
   export default {
     setup() {
       const email = ref('');
       const password = ref('');
-  
+
       const login = async () => {
         try {
           const { user, error } = await supabase.auth.signInWithPassword({
