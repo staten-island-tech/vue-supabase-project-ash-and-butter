@@ -16,7 +16,7 @@ Postmaker
 
 <script>
 import { ref } from 'vue';
-import supabase from '../supabase'; // Adjust the path as necessary
+import {supabase} from '../supabase.js'; // Adjust the path as necessary
 
 export default {
   name: 'PostMaker',
@@ -33,7 +33,7 @@ export default {
     const insertPost = async (post) => {
       const { data, error } = await supabase
         .from('posts')
-        .insert([post]);
+        .insert(post);
 
       if (error) {
         console.error('Error inserting data:', error);

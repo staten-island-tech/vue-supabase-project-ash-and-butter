@@ -9,6 +9,7 @@ import Account from './components/Account.vue'
 import Auth from './components/Auth.vue'
 import { supabase } from './supabase'
 import LoginMain from './components/LoginMain.vue'
+import PostMaker from './components/PostMaker.vue'
 
 
 const session = ref()
@@ -33,7 +34,7 @@ onMounted(() => {
     <Account v-if="session" :session="session" />
     
     <LoginMain v-else/>
-    
+    <PostMaker/>
     
   </div>
 </template>
