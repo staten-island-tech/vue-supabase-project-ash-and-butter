@@ -34,7 +34,7 @@ onMounted(() => {
     <Account v-if="session" :session="session" />
     
     <LoginMain v-else/>
-    <PostMaker/>
+   
     
   </div>
 </template>

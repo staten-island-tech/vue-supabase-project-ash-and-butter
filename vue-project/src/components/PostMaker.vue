@@ -4,9 +4,9 @@ Postmaker
 
 
 <form @submit.prevent="insertPost">
-  <label image_url="image_url">Image URL:</label>
+  <label >Image URL:</label>
   <input type="text" v-model="image_url" required>
-  <label caption="caption">Caption:</label>
+  <label >Caption:</label>
   <input type="text" v-model="caption" required>
   <button @click="addPost">Add Post</button>
 
@@ -19,37 +19,24 @@ import { ref } from 'vue';
 import {supabase} from '../supabase.js'; // Adjust the path as necessary
 
 export default {
-  name: 'PostMaker',
-  setup() {
-    const post = ref({
-      
-      username: 'john_doe',
-      image_url: 'https://example.com/image.jpg',
-      caption: 'Enjoying the sunny day!',
-      likes: 150,
-      
-    });
+  methods: {
+  async insertPost(event) {
+    event.preventDefault();
 
-    const insertPost = async (post) => {
-      const { data, error } = await supabase
-        .from('posts')
-        .insert(post);
+    const { data, error } = await supabase
+      .from('posts')
+      .insert([
+        { image_url: this.image_url, caption: this.caption },
+      ]);
 
-      if (error) {
-        console.error('Error inserting data:', error);
-      } else {
-        console.log('Data inserted successfully:', data);
-      }
-    };
-
-    const addPost = () => {
-      insertPost(post.value);
-    };
-
-    return {
-      addPost
-    };
-  }
+    if (error) {
+      console.error('Error: ', error);
+    } else {
+      console.log('Post inserted: ', data);
+    }
+  },
+}
+  
 };
 </script>
 

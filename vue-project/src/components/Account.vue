@@ -1,6 +1,8 @@
 <script setup>
 import { supabase } from '../supabase'
 import { onMounted, ref, toRefs } from 'vue'
+import PostMaker from './PostMaker.vue';
+import PostDis from './PostDis.vue';
 
 const props = defineProps(['session'])
 const { session } = toRefs(props)
@@ -128,7 +130,10 @@ async function signOut() {
               <img style="width: 23.8rem; margin-left: .6rem; margin-right: .6rem;" src="/CubeLogo.png" alt="">
             </div>
             <div style="height: 3rem;width:25rem;"></div>
+            <PostMaker />
+            
           </div>
+          
         </div>
       </div>
     </div>
@@ -142,11 +147,16 @@ async function signOut() {
 
     <!-- Other form elements -->
   </form>
+  
+  <PostDis />
+  e
+  
 </template>
 
 <script>
 // Import the new component
 import Avatar from './Avatar.vue'
+
 </script>
 <style>
 </style>

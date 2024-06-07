@@ -10,7 +10,9 @@
             <div class="loginPageHolderM11" aria-disabled="false" role="button" tabindex="0"> <!--Momento Logo-->
               <img class="loginPageHolderM111" src="/CubeCraft.png" alt="CubeCraft Logo">
             </div>
+            
             <div class="loginPageHolderM12"> <!--LogIn + Forgot Password-->
+              <form @submit.prevent="login" class="loginForm">
               <div class="loginPageHolderM121"> <!--LogIn-->
                 <div class="loginPageHolderM1211"> <!--Phone number, username, or email-->
                   <div class="loginPageHolderM12111">
@@ -33,8 +35,8 @@
                   </div>
                 </div>
                 <div class="loginPageHolderM1213"> <!--LoginBtn-->
-                  <button class="loginPageHolderM12131" type="submit">
-                    <div class="loginPageHolderM12132">Log In</div>
+                  <button  type="submit">
+                    Log In
                   </button>
                 </div>
                 <div class="loginPageHolderM1214"> <!--OR-->
@@ -49,7 +51,9 @@
               <div class="loginPageHolderM122" role="link" tabindex="0"> <!--Forgot Password-->
                 <div class="loginPageHolderM1221">Forgot password?</div>
               </div>
+            </form>
             </div>
+          
           </div>
           <div class="loginPageHolderM2"> <!--SignUp-->
             <div class="loginPageHolderM21"> <!--SignUp-->
