@@ -5,6 +5,7 @@
         <div style="background-color: transparent; margin-top: auto;"> <!--Cube Thingie-->
           <img style="width: 432px; margin-bottom: 5px;" src="/CubeLogo.png" alt=""> <!--Cube Thingie-->
         </div>
+        <h1>Welcome to Momento</h1>
         <div class="loginPageHolderM"> <!--Momento Logo, LogIn, Forgot Password, SignUp-->
           <div class="loginPageHolderM1"> <!--Momento Logo, LogIn, Forgot Password-->
             <div class="loginPageHolderM11" aria-disabled="false" role="button" tabindex="0"> <!--Momento Logo-->
