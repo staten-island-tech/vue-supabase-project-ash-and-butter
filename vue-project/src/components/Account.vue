@@ -79,7 +79,10 @@ async function signOut() {
 
 <template>
   <div style="background-color: red; width: 100vw; display: flex;height: 50rem;">
-    <div style="background-color: blue; width: 30vw;height: 50rem;"></div>
+    <div style="background-color: blue; width: 30vw;height: 50rem;">
+      <PostMaker />
+      <PostDis />
+    </div>
     <div style="background-color: aqua; width: 70vw;height: 50rem; ">
       <div style="background-color: red; width: 55vw; margin-right: auto; margin-left: auto;">
         <div style="background-color: blanchedalmond;width:55vw; height: 20rem; display: flex;">
@@ -116,25 +119,25 @@ async function signOut() {
           </div>
 
         </div>
-        <div style="background-color: green;width: 55vw; display:flex">
-          <div style="background-color: red; border-width: .2rem;border-color: black ;width: 25rem; height: 33rem; border-radius: .5rem; border-color: black; margin: 2rem;"><!--Post Insertion Template-->
+        <!-- <div style="background-color: green;width: 55vw; display:flex">
+          <div style="background-color: red; border-width: .2rem;border-color: black ;width: 25rem; height: 33rem; border-radius: .5rem; border-color: black; margin: 2rem;">Post Insertion Template
             <div style="width: 25rem; height: 4rem; border-top-left-radius: .5rem; border-top-right-radius: .5rem; display: flex;">
               <div style="width: 4rem; height: 4rem; border-top-left-radius: .5rem;">
                 <img style="width: 3rem; border-radius: .5rem; margin-top: .5rem; margin-bottom: .5rem;margin-left: .5rem; margin-right: .5rem" src="/CubeLogo.png" alt="Cube Logo Image">
               </div>
               <div style="width: 21rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: .98rem;"> 
-                <h3 style="margin-top: 1.5rem; font-size: 14px; font-weight: 400; line-height: 18px;">batyrkhan_sa</h3>
+                <h3 style="margin-top: 1.5rem; font-size: 14px; font-weight: 400; line-height: 18px;">.</h3>
               </div>
             </div>
             <div style="width: 25rem; height: 26rem; border-bottom-left-radius: .5rem;border-bottom-right-radius: .5rem;">
               <img style="width: 23.8rem; margin-left: .6rem; margin-right: .6rem;" src="/CubeLogo.png" alt="">
             </div>
             <div style="height: 3rem;width:25rem;"></div>
-            <PostMaker />
+            
             
           </div>
           
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -148,8 +151,8 @@ async function signOut() {
     <!-- Other form elements -->
   </form>
   
-  <PostDis />
-  e
+  
+  
   
 </template>
 

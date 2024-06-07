@@ -1,7 +1,7 @@
 <template>
   <div>
       <h4>Posts</h4>
-      <ul id="superlist">qqqqqqqqqqqq</ul>
+      <ul id="superlist"></ul>
   </div>
 </template>
 
@@ -27,8 +27,10 @@ export default {
       this.posts.forEach(post => {
         const li = document.createElement('li');
         li.innerHTML = `
-          <img src="${post.image_url ?? ''}" alt="${post.caption ?? ''}">
+          <div style="background-color: beige">
+          <img style="width: 10rem" src="${post.image_url ?? ''}" alt="${post.caption ?? ''}">
           <p>${post.caption}</p>
+          </div>
         `;
         ul.appendChild(li);
       });
