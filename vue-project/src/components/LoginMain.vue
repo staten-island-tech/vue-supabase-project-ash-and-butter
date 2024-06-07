@@ -78,24 +78,7 @@
 
 
 
-  <div class="loginGreaterDiv">
-    <div class="loginSmallerDiv">
-      <form @submit.prevent="login" class="loginForm">
-        <div class="loginFormD1">
 
-        </div>
-        <div class="loginEmail">
-          <div class="loginEmailD1">
-
-          </div>
-          <input class="loginEmailField" type="email" v-model="email" required>
-        </div>
-
-        <input type="password" v-model="password" required>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  </div> 
 
 </template>
   
