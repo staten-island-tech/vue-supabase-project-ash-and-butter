@@ -79,26 +79,25 @@ async function signOut() {
   <div style="background-color: red; width: 100vw; display: flex;height: 50rem;">
     <div style="background-color: blue; width: 30vw;height: 50rem;"></div>
     <div style="background-color: aqua; width: 70vw;height: 50rem; ">
-      <div style="background-color: red; width: 55vw; height: 50rem; margin-right: auto; margin-left: auto;">
-
+      <div style="background-color: red; width: 55vw; margin-right: auto; margin-left: auto;">
         <div style="background-color: blanchedalmond;width:55vw; height: 20rem; display: flex;">
           <div style="width: 20rem; background-color: purple;">
             <img src="/CubeLogo.png" alt="" style="height: 15rem; width: 15rem; margin-top: 2rem; margin-left: 2rem; border-radius: .5rem;">
           </div>
-          <div style="margin-top: 2rem;">
+          <div style="margin-top: 2rem;"><!--Profile Info-->
             <h1>Welcome</h1>
             <form class="form-widget" @submit.prevent="updateProfile" style="font-size: large;">
               <div>
                 <label for="email" style="margin-left: 2rem; margin-right: 2.9rem;">Email:</label>
-                <input id="email" style="background-color: white; color: black;" type="text" :value="session.user.email" disabled />
+                <input id="email" style="font-size: .9rem;background-color: white; color: black;" type="text" :value="session.user.email" disabled />
               </div>
               <div>
                 <label for="username" style="margin-left: 2rem; margin-right: 2.9rem;">Name:</label>
-                <input id="username" style="background-color: white; color: black;" type="text" v-model="username" />
+                <input id="username" style="font-size: .9rem;background-color: white; color: black;" type="text" v-model="username" />
               </div>
               <div>
                 <label for="website" style="margin-left: 2rem; margin-right: 2rem;">Website:</label>
-                <input id="website" type="url" v-model="website" />
+                <input id="website" style="font-size: .9rem;" type="url" v-model="website" />
               </div>
               <div style="display: flex;">
                 <div>
@@ -114,6 +113,22 @@ async function signOut() {
             </form>
           </div>
 
+        </div>
+        <div style="background-color: green;width: 55vw; display:flex">
+          <div style="background-color: red; border-width: .2rem;border-color: black ;width: 25rem; height: 33rem; border-radius: .5rem; border-color: black; margin: 2rem;"><!--Post Insertion Template-->
+            <div style="width: 25rem; height: 4rem; border-top-left-radius: .5rem; border-top-right-radius: .5rem; display: flex;">
+              <div style="width: 4rem; height: 4rem; border-top-left-radius: .5rem;">
+                <img style="width: 3rem; border-radius: .5rem; margin-top: .5rem; margin-bottom: .5rem;margin-left: .5rem; margin-right: .5rem" src="/CubeLogo.png" alt="Cube Logo Image">
+              </div>
+              <div style="width: 21rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: .98rem;"> 
+                <h3 style="margin-top: 1.5rem; font-size: 14px; font-weight: 400; line-height: 18px;">batyrkhan_sa</h3>
+              </div>
+            </div>
+            <div style="width: 25rem; height: 26rem; border-bottom-left-radius: .5rem;border-bottom-right-radius: .5rem;">
+              <img style="width: 23.8rem; margin-left: .6rem; margin-right: .6rem;" src="/CubeLogo.png" alt="">
+            </div>
+            <div style="height: 3rem;width:25rem;"></div>
+          </div>
         </div>
       </div>
     </div>
