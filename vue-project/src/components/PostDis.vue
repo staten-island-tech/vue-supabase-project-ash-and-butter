@@ -30,6 +30,8 @@ export default {
           <div style="background-color: beige">
           <img style="width: 10rem" src="${post.image_url ?? ''}" alt="${post.caption ?? ''}">
           <p>${post.caption}</p>
+          <p>${post.created_at}</p>
+          <p>${post.likes}</p>
           </div>
         `;
         ul.appendChild(li);

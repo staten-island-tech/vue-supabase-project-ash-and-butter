@@ -18,6 +18,7 @@ Postmaker
 import { ref } from 'vue';
 import {supabase} from '../supabase.js'; // Adjust the path as necessary
 
+
 export default {
   methods: {
   async insertPost(event) {
