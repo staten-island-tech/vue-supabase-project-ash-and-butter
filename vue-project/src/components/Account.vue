@@ -78,15 +78,15 @@ async function signOut() {
 </script>
 
 <template>
-  <div style="background-color: red; width: 100vw; display: flex;height: 50rem;">
-    <div style="background-color: blue; width: 30vw;height: 50rem;">
+  <div style=" width: 100vw; display: flex;height: 50rem;">
+    <div style=" width: 30vw;height: 50rem;">
       <PostMaker />
       <PostDis />
     </div>
-    <div style="background-color: aqua; width: 70vw;height: 50rem; ">
-      <div style="background-color: red; width: 55vw; margin-right: auto; margin-left: auto;">
-        <div style="background-color: blanchedalmond;width:55vw; height: 20rem; display: flex;">
-          <div style="width: 20rem; background-color: purple;">
+    <div style=" width: 70vw;height: 50rem; ">
+      <div style=" width: 55vw; margin-right: auto; margin-left: auto;">
+        <div style="width:55vw; height: 20rem; display: flex;">
+          <div style="width: 20rem; ">
             <img src="/CubeLogo.png" alt="" style="height: 15rem; width: 15rem; margin-top: 2rem; margin-left: 2rem; border-radius: .5rem;">
           </div>
           <div style="margin-top: 2rem;"><!--Profile Info-->
