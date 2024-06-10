@@ -35,11 +35,19 @@
   <script>
   import { ref } from 'vue';
   import { supabase } from '../supabase.js';
+<<<<<<< Updated upstream
+=======
+  import {computed} from 'vue';
+  import {useUserStore} from '../stores/store.js';
+import { RouterLink } from 'vue-router';
+>>>>>>> Stashed changes
   
   export default {
     setup() {
       const email = ref('');
       const password = ref('');
+      const userStore = useUserStore();
+      const loggedInUserName = computed(() => userStore.user?.name);
 
       const login = async () => {
         try {
@@ -51,6 +59,7 @@
             throw error;
           }
           console.log('User logged in:', user);
+          userStore.setUser(user);
         } catch (error) {
           console.error('Login error:', error.message);
         }

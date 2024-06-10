@@ -1,6 +1,12 @@
 <script setup>
 import { supabase } from '../supabase'
 import { onMounted, ref, toRefs } from 'vue'
+<<<<<<< Updated upstream
+=======
+import PostMaker from './PostMaker.vue';
+import PostDis from './PostDis.vue';
+import {useUserStore} from '../stores/store.js'
+>>>>>>> Stashed changes
 
 const props = defineProps(['session'])
 const { session } = toRefs(props)
@@ -9,7 +15,12 @@ const loading = ref(true)
 const username = ref('')
 const website = ref('')
 const avatar_url = ref('')
+<<<<<<< Updated upstream
 import Postmaker from './PostMaker.vue'
+=======
+const userStore = useUserStore();
+userStore.setLoggedInUser(loggedInUser);
+>>>>>>> Stashed changes
 
 onMounted(() => {
   getProfile()

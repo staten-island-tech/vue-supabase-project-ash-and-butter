@@ -1,4 +1,8 @@
-import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
-export const shipStore = defineStore('shipStore', () => {
+export const useUserStore = defineStore('user', () => ({
+    loggedInUser: null,
+    setLoggedInUser(user) {
+        this.loggedInUser = user;
+    }
+}));
