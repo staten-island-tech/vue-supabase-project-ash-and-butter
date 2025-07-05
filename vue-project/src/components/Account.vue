@@ -161,5 +161,12 @@ async function signOut() {
 import Avatar from './Avatar.vue'
 
 </script>
+// Add the new component to the components object
+components: {
+  Avatar
+}
+</script>
+
+
 <style>
 </style>
